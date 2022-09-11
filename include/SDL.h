@@ -29,6 +29,13 @@
 #ifndef SDL_h_
 #define SDL_h_
 
+#ifdef _MSC_VER
+    #pragma comment(lib, "winmm.lib")
+    #pragma comment(lib, "imm32.lib")
+    #pragma comment(lib, "version.lib")
+    #pragma comment(lib, "setupapi.lib")
+#endif // _MSC_VER
+
 #include "SDL_main.h"
 #include "SDL_stdinc.h"
 #include "SDL_assert.h"
