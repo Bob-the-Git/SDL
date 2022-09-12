@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "Debug-MacOS-arm64",
+      "displayName": "Debug-MacOS-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "Darwin",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_C_COMPILER": "/usr/bin/clang",
+        "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Release-MacOS-arm64",
+      "displayName": "Release-MacOS-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_SYSTEM_NAME": "Darwin",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_C_COMPILER": "/usr/bin/clang",
+        "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Debug-iOS-arm64",
+      "displayName": "Debug-iOS-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "iOS",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_SYSROOT": "iphoneos",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Release-iOS-arm64",
+      "displayName": "Release-iOS-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_SYSTEM_NAME": "iOS",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_SYSROOT": "iphoneos",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Debug-iOS_Sim-arm64",
+      "displayName": "Debug-iOS_Sim-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "iOS",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_SYSROOT": "iphonesimulator",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Release-iOS_Sim-arm64",
+      "displayName": "Release-iOS_Sim-arm64",
+      "description": "",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_SYSTEM_NAME": "iOS",
+        "CMAKE_OSX_ARCHITECTURES": "arm64",
+        "CMAKE_OSX_SYSROOT": "iphonesimulator",
+        "SDL_TESTS": true
+      }
+    }
+  ]
+}
