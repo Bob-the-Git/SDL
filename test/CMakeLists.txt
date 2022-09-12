@@ -53,6 +53,13 @@ if(WINDOWS)
     add_definitions(-Dmain=SDL_main)
 endif()
 
+if(APPLE)
+    if(CMAKE_SYSTEM_NAME MATCHES ".*iOS.*")
+        link_libraries(SDL2main)
+        add_definitions(-Dmain=SDL_main)
+    endif()
+endif()
+
 # CMake incorrectly detects opengl32.lib being present on MSVC ARM64
 if(NOT MSVC OR NOT CMAKE_GENERATOR_PLATFORM STREQUAL "ARM64")
     # Prefer GLVND, if present
