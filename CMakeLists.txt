@@ -85,8 +85,8 @@ set(SDL_MICRO_VERSION 0)
 set(SDL_VERSION "${SDL_MAJOR_VERSION}.${SDL_MINOR_VERSION}.${SDL_MICRO_VERSION}")
 
 # Set defaults preventing destination file conflicts
-set(SDL_CMAKE_DEBUG_POSTFIX "d"
-    CACHE STRING "Name suffix for debug builds")
+# set(SDL_CMAKE_DEBUG_POSTFIX "d"
+#     CACHE STRING "Name suffix for debug builds")
 
 mark_as_advanced(CMAKE_IMPORT_LIBRARY_SUFFIX SDL_CMAKE_DEBUG_POSTFIX)
 
@@ -3126,7 +3126,7 @@ if(SDL_STATIC)
     # Avoid conflict between the dll import library and the static library
     set_target_properties(SDL2-static PROPERTIES OUTPUT_NAME "SDL2-static")
   else()
-    set_target_properties(SDL2-static PROPERTIES OUTPUT_NAME "SDL2")
+    set_target_properties(SDL2-static PROPERTIES OUTPUT_NAME "SDL2-static")
   endif()
   set_target_properties(SDL2-static PROPERTIES POSITION_INDEPENDENT_CODE "${SDL_STATIC_PIC}")
   target_compile_definitions(SDL2-static PRIVATE SDL_STATIC_LIB)
