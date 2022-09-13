@@ -92,6 +92,38 @@
         "CMAKE_OSX_SYSROOT": "iphonesimulator",
         "SDL_TESTS": true
       }
+    },
+    {
+      "name": "Debug-Windows-AMD64",
+      "displayName": "Debug-Windows-AMD64",
+      "description": "",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_SYSTEM_NAME": "Windows",
+        "CMAKE_SYSTEM_PROCESSOR": "AMD64",
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_CXX_COMPILER": "cl",
+        "SDL_TESTS": true
+      }
+    },
+    {
+      "name": "Release-Windows-AMD64",
+      "displayName": "Release-Windows-AMD64",
+      "description": "",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_SYSTEM_NAME": "Windows",
+        "CMAKE_SYSTEM_PROCESSOR": "AMD64",
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_CXX_COMPILER": "cl",
+        "SDL_TESTS": true
+      }
     }
   ]
 }
