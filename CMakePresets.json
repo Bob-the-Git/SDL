@@ -99,6 +99,10 @@
       "description": "",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
         "CMAKE_BUILD_TYPE": "Debug",
@@ -115,6 +119,10 @@
       "description": "",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
         "CMAKE_BUILD_TYPE": "Release",
